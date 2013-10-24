@@ -32,6 +32,7 @@ class Monster(object):
         self.health = self.health - (attack_number - defense)
         if self.health <= 0:
             self.dead()
+
         return False
 
     def dead():
@@ -64,4 +65,5 @@ def gen(n, m):
         if r not in res:
             res.append(r)
             i += 1
+
     return res

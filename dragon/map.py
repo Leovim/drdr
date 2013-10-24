@@ -12,7 +12,7 @@ class SceneMap(object):
     def monster_gen(self):
         ''' 随机生成各房间对应的怪物 '''
         self.monster_in_room = self.gen(5, self.room_number)
-    
+
     def gen(self, n, m):
         ''' 用抽签法从n个中抽出m个 '''
         res = []
@@ -22,6 +22,7 @@ class SceneMap(object):
             if r not in res:
                 res.append(r)
                 i += 1
+
         return res
 
 class WoodsMap(SceneMap):
@@ -29,11 +30,11 @@ class WoodsMap(SceneMap):
     def __init__(self):
         SceneMap.__init__(self, 3)
         self.monster_init()
-    
+
     def monster_init(self):
         for index, monster in enumerate(self.monster_in_room):
             self.monster_in_room[index] = self.monster_list(monster)
-        
+
     def monster_list(self, index):
         return {
             0: monster.Slime(),

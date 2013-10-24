@@ -26,24 +26,24 @@ class Slime(Monster):
     ''' 古森基本怪物之一：史莱姆 '''
     def __init__(self):
         Monster.__init__(self, 22, 8, 6, 5)
-        
+
 class Goblin(Monster):
     ''' 古森基本怪物之一：哥布林 '''
     def __init__(self):
         Monster.__init__(self, 20, 11, 5, 5)
-       
+
 class Zombie(Monster):
     ''' 古森基本怪物之一：僵尸 '''
     def __init__(self):
         Monster.__init__(self, 24, 12, 4, 6)
-        
+
 class Buck(Monster):
     ''' 古森基本怪物之一：雄鹿 '''
     def __init__(self):
         Monster.__init__(self, 25, 8, 4, 6)
-        
+
 class Rogue(Monster):
     ''' 古森基本怪物之一：流氓 '''
     def __init__(self):
         Monster.__init__(self, 18, 13, 4, 5)
-        
+
